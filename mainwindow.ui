@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1474</width>
+    <height>969</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>230</y>
+      <width>681</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* styles.qss */
+
+/* Set the default font color to white */
+* {
+    color: white;
+}
+
+/* Style for input boxes (assuming they are QLineEdit or similar) */
+QLineEdit {
+    background-color: #ffffff; /* White background for input boxes for clarity */
+    border: 1px solid #3498db; /* Blue border */
+    border-radius: 10px; /* Larger border radius for smooth edges */
+    padding: 8px; /* Increased padding */
+    color: #333; /* Text color inside input boxes */
+}
+
+/* Style for push buttons (assuming they are QPushButtons or similar) */
+QPushButton {
+    background-color: #3498db; /* Blue color for buttons */
+    border: 1px solid #2980b9; /* Darker blue border for buttons */
+    border-radius: 10px; /* Larger border radius for smooth edges */
+    padding: 8px 16px; /* Adjusted padding */
+    color: white; /* Text color on buttons */
+}
+
+/* Style for QStackedWidget */
+QStackedWidget {
+    background-color: rgba(255, 255, 255, 0.1); /* Very light semi-transparent white background for a subtle effect */
+    border: 5px solid #3498db; /* Blue border */
+    border-radius: 10px; /* Larger border radius for smooth edges */
+    padding: 20px; /* Adjusted padding */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    /* Optionally add additional styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+    color: #333; /* Text color for better readability */
+}
+
+/* Style for dialogs */
+QDialog {
+    background-color: #3498db; /* Blue color for dialogs */
+    border: 1px solid #2980b9; /* Darker blue border for dialogs */
+    border-radius: 10px; /* Larger border radius for smooth edges */
+    padding: 10px; /* Adjusted padding */
+    color: white; /* Text color */
+}
+
+/* Additional styling for better appearance */
+QPushButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #1f618d; /* Even darker blue when pressed */
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="lineEdituserr">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Username</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>160</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/img/img/user_747376.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdipasswordd">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>220</y>
+        <width>231</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>230</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/img/img/padlock.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="forgot_pb">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>320</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background-color: transparent;
+	font: 63 10pt &quot;Montserrat SemiBold&quot;;
+color: Black;
+ text-decoration: underline;
+border: none };
+</string>
+      </property>
+      <property name="text">
+       <string>forgot password</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonlog">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>280</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 12pt &quot;Montserrat SemiBold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Log in</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLineEdit" name="rcpt">
+      <property name="geometry">
+       <rect>
+        <x>197</x>
+        <y>211</y>
+        <width>261</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Enter your Email address</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sendBtn">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>280</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 12pt &quot;Montserrat SemiBold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>100</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+	font: 63 14pt &quot;Montserrat SemiBold&quot;;
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#000000;&quot;&gt;Enter your email associated with your account &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#000000;&quot;&gt;and we'll send an email to reset your password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>40</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Password reset</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Enter New Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pas2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>200</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pas1">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>130</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cont_pb">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>260</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 63 12pt &quot;Montserrat SemiBold&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>120</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 15px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Old Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>200</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 15px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>New Password</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1470</width>
+      <height>1000</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/R (1).jfif);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>530</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/99484734571a59fde41fc712a14c32c3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>751</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/dqzd.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_6</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_2</zorder>
+   <zorder>stackedWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1474</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

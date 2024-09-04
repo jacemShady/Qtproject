@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pageemp</class>
+ <widget class="QDialog" name="pageemp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1470</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>1861</width>
+     <height>1011</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Style for QRadioButton */
+QRadioButton {
+    color: white; /* Text color for radio buttons */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 5px; /* Margin around radio buttons */
+}
+
+/* Style for QLineEdit (input box) */
+QLineEdit {
+    background-color: #ffffff; /* White background for input boxes */
+    border: 1px solid #3498db; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the input box */
+    color: black; /* Text color inside input boxes */
+}
+
+/* Style for QLabel (text label) */
+QLabel {
+    color: black; /* Text color for labels */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 5px; /* Margin around labels */
+}
+
+/* Style for QPushButton */
+QPushButton {
+    background-color: #3498db; /* Blue color for buttons */
+    border: 1px solid #2980b9; /* Darker blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside buttons */
+    color: white; /* Text color on buttons */
+}
+
+/* Additional styling for better appearance */
+QPushButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #21618c; /* Even darker blue when pressed */
+}
+
+/* Style for QTabWidget */
+QTabWidget {
+    color: white; /* Text color for tab widget */
+    font: 10pt &quot;Bebas Neue&quot;; /* Font style and size */
+}
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>-40</x>
+       <y>0</y>
+       <width>1861</width>
+       <height>891</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+/* Style for QGroupBox */
+QRadioButton{ color: white; /* Text color for labels */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}
+QComboBox{ background-color: #3498db; /* Blue color for input boxes */
+    border: 1px solid #2980b9; /* Border color for input boxes */
+    border-radius: 5px; /* Border radius for input boxes */
+    padding: 5px; /* Padding for input boxes */
+    color: black; /* Text color inside input boxes */
+}
+/* Style for QLineEdit (input box) */
+QLineEdit {
+    background-color: #3498db; /* Blue color for input boxes */
+    border: 1px solid #2980b9; /* Border color for input boxes */
+    border-radius: 5px; /* Border radius for input boxes */
+    padding: 5px; /* Padding for input boxes */
+    color: black; /* Text color inside input boxes */
+}
+
+/* Style for QLabel (text label) */
+QLabel {
+    color: white; /* Text color for labels */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}
+
+/* Style for QPushButton */
+QPushButton {
+    background-color: #3498db; /* Blue color for buttons */
+    border: 1px solid #2980b9; /* Border color for buttons */
+    border-radius: 5px; /* Border radius for buttons */
+    padding: 5px 10px; /* Adjust padding as needed */
+    color: white; /* Text color on buttons */
+}
+
+/* Additional styling for better appearance */
+QPushButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #21618c; /* Even darker blue when pressed */
+}
+
+/* Add more styles as needed for your specific application */
+</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLineEdit" name="cin_e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>110</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Numbers only</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>440</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Role</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>69</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nom_e">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>110</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="placeholderText">
+       <string>Characters only</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>149</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>firstname</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="prenom_e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>200</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="placeholderText">
+       <string>Characters only</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>340</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>date of birth</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="daten_e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>400</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>YYYY-MM-DD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Salary</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="salaire_e">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>400</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Number only</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>440</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>hiring date</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="datee_e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>490</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>YYYY-MM-DD</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tab_employes">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>110</y>
+        <width>661</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="role_e">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>490</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Receptioniste</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Assistant</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ressource Humaine</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>250</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color: black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Phone</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="telephone_e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>300</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>+216</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Adresse</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="adresse_e">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>200</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Characters only</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>250</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="email_e">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>300</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>email@gmail.com</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>20</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color: black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>nom</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>10</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>prenom</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortAscButton">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>80</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 18pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>ASCendant</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortDescButton">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>80</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 18pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>DESCendant</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1501</width>
+        <height>921</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/img/img/sports-nautiques.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>-170</x>
+        <y>-30</y>
+        <width>2081</width>
+        <height>991</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/img/img/OIP (2).jfif);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>540</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color: black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="user_e">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>590</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>530</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pas_e">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>590</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_pdf">
+      <property name="geometry">
+       <rect>
+        <x>1260</x>
+        <y>210</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 18pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>pdf</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="statrole">
+      <property name="geometry">
+       <rect>
+        <x>1210</x>
+        <y>580</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 18pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>Role</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>630</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Task</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="task_e">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>680</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 18pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Schedule appointments</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Manage correspondence</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Coordinate meetings</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Organize supplies</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Prepare reports </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Handle phone calls </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Support team </string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Update databases</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Manage mails</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pb_ajouter">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>760</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/img/img/plus.png</normaloff>:/img/img/plus.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_modifier_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>760</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/img/img/pen.png</normaloff>:/img/img/pen.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_supprimer">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>760</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/img/img/close.png</normaloff>:/img/img/close.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>20</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #f0f0f0;
+border: 5px solid #ccc;
+padding: 5px;
+border: 1px solid #0078d7;
+font: 12pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>1240</x>
+        <y>130</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 30pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>export</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="refrech_pb">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>20</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color: white;
+font: 22pt &quot;Bebas Neue&quot;; text-decoration: underline;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/img/img/load.png</normaloff>:/img/img/load.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="search">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>20</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color: white;
+font: 22pt &quot;Bebas Neue&quot;; text-decoration: underline;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="Resources.qrc">
+        <normaloff>:/img/img/search.png</normaloff>:/img/img/search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>20</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent; border: none;color:  black;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>cin</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="lab_chart_pie" native="true">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>130</y>
+        <width>591</width>
+        <height>581</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nomasc">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>80</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font: 18pt &quot;Bebas Neue&quot;; 
+border: 1px solid #ccc;
+border-color: black;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>nom A-Z</string>
+      </property>
+     </widget>
+     <zorder>lab_chart_pie</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label</zorder>
+     <zorder>nom_e</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>prenom_e</zorder>
+     <zorder>label_6</zorder>
+     <zorder>daten_e</zorder>
+     <zorder>label_9</zorder>
+     <zorder>salaire_e</zorder>
+     <zorder>cin_e</zorder>
+     <zorder>label_4</zorder>
+     <zorder>label_5</zorder>
+     <zorder>datee_e</zorder>
+     <zorder>tab_employes</zorder>
+     <zorder>role_e</zorder>
+     <zorder>label_21</zorder>
+     <zorder>telephone_e</zorder>
+     <zorder>label_22</zorder>
+     <zorder>adresse_e</zorder>
+     <zorder>label_23</zorder>
+     <zorder>email_e</zorder>
+     <zorder>radioButton</zorder>
+     <zorder>radioButton_2</zorder>
+     <zorder>sortAscButton</zorder>
+     <zorder>sortDescButton</zorder>
+     <zorder>label_13</zorder>
+     <zorder>user_e</zorder>
+     <zorder>label_14</zorder>
+     <zorder>pas_e</zorder>
+     <zorder>pb_pdf</zorder>
+     <zorder>statrole</zorder>
+     <zorder>label_17</zorder>
+     <zorder>task_e</zorder>
+     <zorder>pb_ajouter</zorder>
+     <zorder>pb_modifier_2</zorder>
+     <zorder>pb_supprimer</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>label_19</zorder>
+     <zorder>refrech_pb</zorder>
+     <zorder>search</zorder>
+     <zorder>radioButton_3</zorder>
+     <zorder>nomasc</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>-40</y>
+     <width>1851</width>
+     <height>911</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/img/R (1).jfif);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>371</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bebas Neue</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: none;color: black;</string>
+   </property>
+   <property name="text">
+    <string>  EMPLOYEE</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/415287996_755433109383168_7582230033290630906_n.png</normaloff>:/img/img/415287996_755433109383168_7582230033290630906_n.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="condpb">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>40</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bebas Neue</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: none;color: black;</string>
+   </property>
+   <property name="text">
+    <string>CONDIDAT</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/415260602_915404969798523_5173262210140723394_n.png</normaloff>:/img/img/415260602_915404969798523_5173262210140723394_n.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logoutpb">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>30</y>
+     <width>221</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bebas Neue</family>
+     <pointsize>20</pointsize>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: none;color: white;  text-decoration: underline;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/4400629.png</normaloff>:/img/img/4400629.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <zorder>label_10</zorder>
+  <zorder>tabWidget</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>condpb</zorder>
+  <zorder>logoutpb</zorder>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

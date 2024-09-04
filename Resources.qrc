@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/4400629.png</file>
+        <file>img/415260602_915404969798523_5173262210140723394_n.png</file>
+        <file>img/415287996_755433109383168_7582230033290630906_n.png</file>
+        <file>img/416368571_906095227681180_9098143267016132972_n.png</file>
+        <file>img/gearr.png</file>
+        <file>img/gerr.png</file>
+        <file>img/padlock.png</file>
+        <file>img/user_747376.png</file>
+        <file>img/clipboard.png</file>
+        <file>img/close.png</file>
+        <file>img/email.png</file>
+        <file>img/loupe.png</file>
+        <file>img/pen.png</file>
+        <file>img/plus.png</file>
+        <file>img/qr.png</file>
+        <file>img/refresh.png</file>
+        <file>img/search.png</file>
+        <file>img/subscription.png</file>
+        <file>img/users-avatar.png</file>
+        <file>img/id-card.png</file>
+        <file>img/load.png</file>
+        <file>img/R.jfif</file>
+        <file>img/d712ab83-4441-4847-803c-38e6cb9e0418.jpg</file>
+        <file>img/OIP (1).jfif</file>
+        <file>img/dqzd.png</file>
+        <file>img/OIP (2).jfif</file>
+        <file>img/R (1).jfif</file>
+        <file>img/delete_10257834.png</file>
+        <file>img/google-plus_9723940.png</file>
+        <file>img/stop-sign_4765773.png</file>
+        <file>img/415327179_385681727386246_4607154393480602269_n-removebg-preview.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pagemenu</class>
+ <widget class="QDialog" name="pagemenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1470</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-300</x>
+     <y>-170</y>
+     <width>1871</width>
+     <height>1411</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1871</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1871</width>
+     <height>1411</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/img/OIP (2).jfif);
+
+/* Style for QLabel */
+QLabel {
+    color: white; /* Text color for labels to match the overall theme */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}QPushButton {
+    background-color: #3498db; /* Blue color for buttons */
+    border: 1px solid #2980b9; /* Darker blue border */
+    border-radius: 5px; /* Smaller border radius for a sleeker look */
+    font: 28pt &quot;Bebas Neue&quot;; /* Font style and size */
+    padding: 5px 10px; /* Adjusted padding */
+    color: white; /* Text color on buttons */
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    border-color: #1f618d; /* Slightly lighter blue for the border */
+}
+
+QPushButton:pressed {
+    background-color: #1f618d; /* Even darker blue when pressed */
+    border-color: #1a5276; /* Darker blue for the border */
+    color: #ecf0f1; /* Light gray color for text when pressed */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>300</y>
+     <width>551</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #3498db; /* Blue color for buttons */
+    border: 1px solid #2980b9; /* Darker blue border */
+    border-radius: 5px; /* Smaller border radius for a sleeker look */
+    font: 28pt &quot;Bebas Neue&quot;; /* Font style and size */
+    padding: 5px 10px; /* Adjusted padding */
+    color: white; /* Text color on buttons */
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    border-color: #1f618d; /* Slightly lighter blue for the border */
+}
+
+QPushButton:pressed {
+    background-color: #1f618d; /* Even darker blue when pressed */
+    border-color: #1a5276; /* Darker blue for the border */
+    color: #ecf0f1; /* Light gray color for text when pressed */
+}</string>
+   </property>
+   <property name="text">
+    <string>GESTION D’employe</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>480</y>
+     <width>561</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #3498db; /* Blue color for buttons */
+    border: 1px solid #2980b9; /* Darker blue border */
+    border-radius: 5px; /* Smaller border radius for a sleeker look */
+    font: 28pt &quot;Bebas Neue&quot;; /* Font style and size */
+    padding: 5px 10px; /* Adjusted padding */
+    color: white; /* Text color on buttons */
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    border-color: #1f618d; /* Slightly lighter blue for the border */
+}
+
+QPushButton:pressed {
+    background-color: #1f618d; /* Even darker blue when pressed */
+    border-color: #1a5276; /* Darker blue for the border */
+    color: #ecf0f1; /* Light gray color for text when pressed */
+}</string>
+   </property>
+   <property name="text">
+    <string>Gestion de condidat</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_nom">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>20</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: none;color: white;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_prenom">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>20</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: none;color: white;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_role">
+   <property name="geometry">
+    <rect>
+     <x>1310</x>
+     <y>20</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent; border: none;color: white;
+font: 22pt &quot;Bebas Neue&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
