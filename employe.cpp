@@ -109,8 +109,8 @@ void employe:: setrole_e(QString role_e ){this->role_e =role_e ;}
          model->setHeaderData(5, Qt::Horizontal, QObject::tr("num_telephone"));
          model->setHeaderData(6, Qt::Horizontal, QObject::tr(" date de naissance "));
          model->setHeaderData(7, Qt::Horizontal, QObject::tr(" date d'embauche "));
-         model->setHeaderData(8, Qt::Horizontal, QObject::tr("role"));
-         model->setHeaderData(9, Qt::Horizontal, QObject::tr(" salaire"));
+         model->setHeaderData(8, Qt::Horizontal, QObject::tr("salaire"));
+         model->setHeaderData(9, Qt::Horizontal, QObject::tr(" role"));
          model->setHeaderData(10, Qt::Horizontal, QObject::tr(" username"));
          model->setHeaderData(11, Qt::Horizontal, QObject::tr(" password"));
          model->setHeaderData(12, Qt::Horizontal, QObject::tr(" task"));

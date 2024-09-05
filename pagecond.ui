@@ -82,7 +82,7 @@ font: 10pt &quot;Bebas Neue&quot;;}</string>
      <property name="geometry">
       <rect>
        <x>428</x>
-       <y>100</y>
+       <y>120</y>
        <width>641</width>
        <height>451</height>
       </rect>
@@ -110,7 +110,7 @@ font: 22pt &quot;Bebas Neue&quot;;</string>
       <rect>
        <x>10</x>
        <y>150</y>
-       <width>81</width>
+       <width>121</width>
        <height>41</height>
       </rect>
      </property>
@@ -144,7 +144,7 @@ font: 22pt &quot;Bebas Neue&quot;;</string>
       <rect>
        <x>70</x>
        <y>350</y>
-       <width>251</width>
+       <width>321</width>
        <height>41</height>
       </rect>
      </property>
@@ -161,7 +161,7 @@ font: 22pt &quot;Bebas Neue&quot;;</string>
       <rect>
        <x>10</x>
        <y>240</y>
-       <width>171</width>
+       <width>201</width>
        <height>41</height>
       </rect>
      </property>

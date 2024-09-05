@@ -69,13 +69,13 @@ cond::cond()
     {
         QSqlQueryModel* model = new QSqlQueryModel();
         model->setQuery("select * from cond");
-        model->setHeaderData(0, Qt::Horizontal, QObject::tr("cin_c"));
-        model->setHeaderData(1, Qt::Horizontal, QObject::tr(" cin "));
-        model->setHeaderData(2, Qt::Horizontal, QObject::tr(" nom"));
-         model->setHeaderData(3, Qt::Horizontal, QObject::tr("prenom"));
-            model->setHeaderData(4, Qt::Horizontal, QObject::tr("daten"));
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("cin"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr(" nom "));
+        model->setHeaderData(2, Qt::Horizontal, QObject::tr(" prenom"));
+         model->setHeaderData(3, Qt::Horizontal, QObject::tr("daten"));
+            model->setHeaderData(4, Qt::Horizontal, QObject::tr("genre"));
                 model->setHeaderData(5, Qt::Horizontal, QObject::tr("Nation"));
-                model->setHeaderData(6, Qt::Horizontal, QObject::tr("genre"));
+                model->setHeaderData(6, Qt::Horizontal, QObject::tr("cin_E"));
 
 
         return model;
